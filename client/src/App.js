@@ -9,6 +9,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import AboutHackathon from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState(false);
@@ -57,6 +58,8 @@ function App() {
             <Route path="/about" element={<AboutHackathon />} />
             <Route path="*" element={<Error />} />
           </Routes>
+          {/* <Footer /> */}
+
         </>
       ) : (
         <Box
@@ -71,6 +74,7 @@ function App() {
           <CircularProgress />
         </Box>
       )}
+
     </>
   );
 }
