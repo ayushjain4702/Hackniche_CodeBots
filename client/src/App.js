@@ -9,6 +9,8 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import AboutHackathon from "./components/About";
+import VideoCall from "./components/VideoCall";
+// import { Windmill } from "@windmill/react-ui";
 
 function App() {
   const [data, setData] = useState(false);
@@ -49,14 +51,16 @@ function App() {
       {data ? (
         <>
           <Header />
-
+          {/* <Windmill> */}
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dash" element={<Dashboard />} />
+            <Route path="/video" element={<VideoCall />} />
             <Route path="/about" element={<AboutHackathon />} />
             <Route path="*" element={<Error />} />
           </Routes>
+          {/* </Windmill> */}
         </>
       ) : (
         <Box
