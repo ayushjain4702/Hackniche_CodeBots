@@ -9,6 +9,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import AboutHackathon from "./components/About";
+import VideoCall from "./components/VideoCall";
 
 function App() {
   const [data, setData] = useState(false);
