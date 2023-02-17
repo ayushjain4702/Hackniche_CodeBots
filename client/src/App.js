@@ -9,8 +9,6 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import AboutHackathon from "./components/About";
-import VideoCall from "./components/VideoCall";
-// import { Windmill } from "@windmill/react-ui";
 
 function App() {
   const [data, setData] = useState(false);
@@ -60,7 +58,6 @@ function App() {
             <Route path="/about" element={<AboutHackathon />} />
             <Route path="*" element={<Error />} />
           </Routes>
-          {/* </Windmill> */}
         </>
       ) : (
         <Box

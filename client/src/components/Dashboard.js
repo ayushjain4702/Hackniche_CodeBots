@@ -77,6 +77,7 @@ import Box from "@mui/material/Box";
 
 // export default Dashboard;
 import React from "react";
+import Footer from "./Footer";
 
 function Dashboard() {
   return (
@@ -169,7 +170,164 @@ function Dashboard() {
           </div>
         </main>
       </div>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            <div className="p-4 md:w-1/3 ease-in-out duration:1000 hover:-mt-2 hover:mb-2">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/hack1.jpg" alt="blog" />
+                <div className="p-6">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Solve4Planet Hackathon</h1>
+                  <p className="leading-relaxed mb-3">Solve4Planet Hackathon is a collaborative event aimed at harnessing the power of technology to find innovative solutions to the most pressing global challenges related to sustainability and the environment.</p>
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.2K
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 ease-in-out duration:1000 hover:-mt-2 hover:mb-2">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/hack2.jpg" alt="blog" />
+                <div className="p-6">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Geospatial Hackathon</h1>
+                  <p className="leading-relaxed mb-3">DST in partnership with IIIT Hyderabad and Microsoft is organizing the Geospatial Hackathon. A hackathon to create interest in geospatial tech and specifically build solutions leveraging maps.</p>
+                  <div className="flex items-center flex-wrap">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>2.3K
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 ease-in-out duration:1000 hover:-mt-2 hover:mb-2">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/hack3.jpg" alt="blog" />
+                <div className="p-6">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">VitaDAO Hackathon</h1>
+                  <p className="leading-relaxed mb-3">One way to fight longevity is to gather the best talents in the space and let them work together. Would you like to learn more about how we do that? Check out our hackathon!</p>
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>1.6K
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 ease-in-out duration:1000 hover:-mt-2 hover:mb-2">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/hack4.jpg" alt="blog" />
+                <div className="p-6">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">QHacks Hackathon</h1>
+                  <p className="leading-relaxed mb-3">Join over 500 hackers, speakers and mentors to create, learn and share your ideas all virtually this year! Attend workshops, take part in hacker challenges, meet industry professionals, and some new friends.</p>
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>18K
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 ease-in-out duration:1000 hover:-mt-2 hover:mb-2">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/hack5.jpg" alt="blog" />
+                <div className="p-6">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                    SportsPro Hackathon</h1>
+                  <p className="leading-relaxed mb-3">The sports industry is looking towards the triple bottom line as a priority and is need of fresh talent to contribute to solving the social and ecological issues that face us.
+
+                  </p>
+                  <div className="flex items-center flex-wrap">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>10K
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 ease-in-out duration:1000 hover:-mt-2 hover:mb-2">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/hack6.jpg" alt="blog" />
+                <div className="p-6">
+                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Hyland Hackathon</h1>
+                  <p className="leading-relaxed mb-3">The Hybrid Hyland Hackathon is a 48-hour computer-science/technology-focused hackathon for High School and College students hosted by Hyland, a software company based in Westlake, Ohio!</p>
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>5K
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <Footer />
+      </div>
     </div>
+
   );
 }
 
