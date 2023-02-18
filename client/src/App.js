@@ -10,7 +10,8 @@ import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import AboutHackathon from "./components/About";
 import Parse from "./components/Parse";
-import VideoCall from "./components/VideoCall"
+import VideoCall from "./components/VideoCall";
+import TeamDetail from "./components/TeamDetail";
 
 function App() {
   const [data, setData] = useState(false);
@@ -59,9 +60,8 @@ function App() {
             <Route path="/video" element={<VideoCall />} />
             <Route path="/about" element={<AboutHackathon />} />
             <Route path="/parse" element={<Parse />} />
+            <Route path="/details" element={<TeamDetail />} />
             <Route path="*" element={<Error />} />
-            
-            
           </Routes>
         </>
       ) : (

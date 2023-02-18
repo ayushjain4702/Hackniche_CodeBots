@@ -107,6 +107,11 @@ function About() {
                   Register Team
                 </div>
               </NavLink>
+              <NavLink to="/parse">
+                <div className="bg-indigo-900 text-white font-semibold text-xl rounded-2xl p-3 px-4 ml-10">
+                  Registered Team Details
+                </div>
+              </NavLink>
             </div>
           </div>
         </div>
