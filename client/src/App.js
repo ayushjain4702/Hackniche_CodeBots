@@ -9,7 +9,6 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
 import AboutHackathon from "./components/About";
-import Parse from "./components/Parse";
 
 function App() {
   const [data, setData] = useState(false);
@@ -55,6 +54,7 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dash" element={<Dashboard />} />
+            <Route path="/video" element={<VideoCall />} />
             <Route path="/about" element={<AboutHackathon />} />
             <Route path="*" element={<Error />} />
             <Route path="/parse" element={<Parse />} />
