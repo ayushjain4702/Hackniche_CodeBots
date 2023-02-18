@@ -50,7 +50,7 @@ function App() {
       {data ? (
         <>
           <Header />
-          {/* <Windmill> */}
+
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />

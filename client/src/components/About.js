@@ -5,10 +5,12 @@ import {
   EyeIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import Footer from "./Footer";
+import { NavLink } from "react-router-dom";
 
 function About() {
   return (
-    <div className="bg-slate-300">
+    <div className="bg-slate-300 w-full">
       {/* topcomp */}
       <div className="relative isolate overflow-hidden bg-gray-900 py-5 sm:py-32">
         <img
@@ -77,7 +79,7 @@ function About() {
         {/* collegecard */}
         <div className="bg-slate-200 rounded-2xl p-10 m-5 my-16 space-y-5">
           <h1 className="font-bold text-4xl mx-3 my-5 mb-10">HackNova 2023</h1>
-          <h2 className="flex space-x-4">
+          <h2 className="flex space-x-4 text-lg">
             <BuildingOfficeIcon className="h-8 w-8" />
             {/* https://unstop.com/c/shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-placement-interview-competitions-articles-videos-289 */}
             <p>
@@ -85,25 +87,29 @@ function About() {
               Engineering (DJSCE), Mumbai
             </p>
           </h2>
-          <h2 className="flex space-x-4">
+          <h2 className="flex space-x-4 text-lg">
             <MapPinIcon className="h-8 w-8" />
             <p>
               Dwarkadas Jivanlal Sanghvi College of Engineering, Mumbai,
               Maharashtra, India
             </p>
           </h2>
-          <div className="flex items-end justify-between">
-            <div className="p-3">
-              <span className="bg-white rounded-xl p-1 px-2">#tailwindcss</span>
-              <span className="bg-white rounded-xl p-1 px-2 ml-2">#react</span>
+          <div className="flex flex-wrap max-w-full">
+            <div className="md:text-base flex p-3 text-xs space-x-2">
+              <div className="bg-white rounded-2xl p-3 px-4">
+                #Coding Challenge
+              </div>
+              <div className="bg-white rounded-2xl p-3 px-4">#Hackathon</div>
+              <div className="bg-white rounded-2xl p-3 px-4">#Engineering</div>
+              <div className="bg-white rounded-2xl p-3 px-4">#Presentation</div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-7 justify-between">
+        <div className="grid md:grid-cols-3 md:gap-7 justify-between px-5">
           {/* freecard */}
-          <div className=" bg-slate-200 rounded-2xl p-3 pr-6 ">
-            <h1 className="text-2xl font-bold p-3">Free</h1>
-            <div className="flex flex-col">
+          <div className=" bg-slate-200 rounded-2xl p-3 pr-6 py-7 mb-5">
+            <h1 className="text-3xl font-bold p-3 mb-7">Free</h1>
+            <div className="flex flex-col space-y-5">
               <div className="flex ">
                 <div className="p-3">
                   <UserGroupIcon className="h-8 w-8 text-blue-600 border-2 border-blue-600 rounded-lg p-0.5" />
@@ -143,11 +149,11 @@ function About() {
             </div>
           </div>
           {/* hackanova */}
-          <div className="bg-slate-200 col-span-2 rounded-2xl p-3">
+          <div className="bg-slate-200 col-span-2 rounded-2xl p-7">
             <div>
-              <p className="mb-4 font-semibold text-2xl">Hackanova</p>
-              <div className=" p-3 rounded-2xl space-y-1">
-                <div className="bg-slate-300 p-2 rounded-lg">
+              <p className="mb-4 font-semibold text-4xl">Hackanova</p>
+              <div className=" p-3 rounded-2xl space-y-5">
+                <div className="bg-slate-300 p-5 rounded-lg">
                   <p className="mb-4 font-semibold text-lg">
                     Resume Submission Round (via Unstop)
                   </p>
@@ -166,7 +172,7 @@ function About() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-slate-300 p-2 rounded-lg">
+                <div className="bg-slate-300 p-5 rounded-lg">
                   <p className="mb-4 font-semibold text-lg">
                     Offline Hackathon Round
                   </p>
@@ -189,9 +195,9 @@ function About() {
           </div>
         </div>
         {/* info */}
-        <section className="text-gray-600 body-font overflow-hidden">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="p-12 flex flex-col items-start">
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-2 mx-auto">
+            <div className="p-10 flex flex-col items-start">
               <h2 className="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
                 All that you need to know about Hackanova
               </h2>
@@ -258,115 +264,79 @@ function About() {
             </div>
           </div>
         </section>
+        <section className="">
+          <div className="px-5 py-2 mx-auto">
+            <div className="lg:w-4/5 mx-auto flex flex-wrap">
+              <img
+                alt="ecommerce"
+                className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                src="Img.png"
+              />
+              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col space-y-6">
+                <div className="text-gray-900 text-4xl title-font font-bold mb-1">
+                  Connect With The Organizers
+                </div>
+
+                <div className="flex mx-auto ">
+                  <button className="text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-lg text-xl">
+                    <NavLink to="/video">Connect to Organizers</NavLink>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         {/*contact */}
         <section className="text-gray-600 body-font">
           <div className="container px-5 mx-auto">
+            <h1 className="text-3xl mb-8">Contact The Organizers</h1>
             <div className="flex flex-wrap -m-4">
-              <div className="p-4 md:w-1/3">
+              <div className="p-4 w-fit pr-2 md:w-1/3">
                 <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                   <div className="flex items-center mb-3">
-                    <h2 className="text-gray-900 text-lg title-font font-medium">
-                      Shooting Stars
+                    <h2 className="text-blue-900 text-2xl title-font font-medium">
+                      Ayush Jain
                     </h2>
                   </div>
-                  <div className="flex-grow">
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
-                    </p>
+                  <div className="flex-grow text-lg">
+                    <p className="leading-relaxed">ayushjain@gmail.com</p>
+                    <p className="leading-relaxed">+91 82978 62788</p>
                   </div>
                 </div>
               </div>
-              <div className="p-4 md:w-1/3">
+              <div className="p-4 w-fit pr-2 md:w-1/3">
                 <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                   <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                      </svg>
-                    </div>
-                    <h2 className="text-gray-900 text-lg title-font font-medium">
-                      The Catalyzer
+                    <h2 className="text-blue-900 text-2xl title-font font-medium">
+                      Kevin Haria
                     </h2>
                   </div>
-                  <div className="flex-grow">
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
-                    </p>
-                    <a className="mt-3 text-indigo-500 inline-flex items-center">
-                      Learn More
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
+                  <div className="flex-grow text-lg">
+                    <p className="leading-relaxed ">kevinharia@gmail.com</p>
+                    <p className="leading-relaxed ">+91 82978 62788</p>
                   </div>
                 </div>
               </div>
-              <div className="p-4 md:w-1/3">
+              <div className="p-4 w-fit pr-2 md:w-1/3 ">
                 <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                   <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle cx="6" cy="6" r="3"></circle>
-                        <circle cx="6" cy="18" r="3"></circle>
-                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                      </svg>
-                    </div>
-                    <h2 className="text-gray-900 text-lg title-font font-medium">
-                      Neptune
+                    <h2 className="text-blue-900 text-2xl title-font font-medium">
+                      Sahej Jain
                     </h2>
                   </div>
-                  <div className="flex-grow">
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
-                    </p>
-                    <a className="mt-3 text-indigo-500 inline-flex items-center">
-                      Learn More
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
+                  <div className="flex-grow text-lg">
+                    <p className="leading-relaxed">sahejjain@gmail.com</p>
+                    <p className="leading-relaxed">+91 82978 62788</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   );

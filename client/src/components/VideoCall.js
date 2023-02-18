@@ -16,12 +16,9 @@ function VideoCall() {
             </div>
 
             <div className="leading-relaxed text-lg">
-              Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-              sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-              juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-              seitan poutine tumeric. Gastropub blue bottle austin listicle
-              pour-over, neutra jean shorts keytar banjo tattooed umami
-              cardigan.
+              Reach out to us to get your queries solved regarding the
+              organization of the hackathon or if facing any trouble in the team
+              registration process via video or chat
             </div>
 
             <div className="flex mx-auto ">
