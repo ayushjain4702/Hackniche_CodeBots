@@ -59,7 +59,10 @@ const Header = () => {
       <header className="sticky bg-white ">
         <nav>
           <NavLink to="/">
-            <h1 className="text-xl font-semibold">The Hackathon Master</h1>
+            <h1 className="text-xl font-semibold flex">
+              <img src="img-2.png" alt="letter h icons" className="h-6 w-6" />
+              <span>ackathon Master</span>
+            </h1>
           </NavLink>
           <div className="avtar">
             {logindata.ValidUserOne ? (
