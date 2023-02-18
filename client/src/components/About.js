@@ -102,6 +102,11 @@ function About() {
               <div className="bg-white rounded-2xl p-3 px-4">#Hackathon</div>
               <div className="bg-white rounded-2xl p-3 px-4">#Engineering</div>
               <div className="bg-white rounded-2xl p-3 px-4">#Presentation</div>
+              <NavLink to="/parse">
+                <div className="bg-blue-700 text-white font-semibold text-xl rounded-2xl p-3 px-4 ml-10">
+                  Register Team
+                </div>
+              </NavLink>
             </div>
           </div>
         </div>
