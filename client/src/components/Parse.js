@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-function Parse() {
-  const [file, setFile] = useState(null);
 
+function Parse() {
+    const [file, setFile] = useState(null);
+    const [result, setResult] = useState('');
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
   };
@@ -18,7 +19,11 @@ function Parse() {
     });
 
     if (response.ok) {
+     const data = await response.json()
       console.log("File uploaded successfully");
+      console.log(data[0]);
+      setResult(data[0]);
+
     } else {
       console.error("Error uploading file");
     }
@@ -104,6 +109,8 @@ function Parse() {
               Upload
             </button>
           </form>
+          {result && <p>Result: {result}</p>}
+
         </div>
       </div>
     </section>
