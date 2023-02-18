@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 function Parse() {
   const [file, setFile] = useState(null);
  const [hide, setHide] = useState(false);
@@ -39,9 +40,33 @@ const [result, setResult] = useState('');
     event.preventDefault();
     setHide(true);
 
-return;
+    return;
   };
 
+//   const output=(inputString) => {
+   
+// const parts = inputString.match(/([a-z]+)(\d+)/gi);
+
+// const formattedString = parts.map((part) => {
+//   const [name, value] = part.match(/([a-z]+)(\d+)/i).slice(1);
+//   return name.charAt(0).toUpperCase() + name.slice(1) + ":" + value;
+// }).join(" ");
+
+// // console.log(formattedString); // output: Ayush:4 Rudra:4 Meet:4 Sahej:5
+
+//     parts = formattedString.split(" ");
+    
+//     const jsonObject = {};
+    
+//     for (let i = 0; i < parts.length; i++) {
+//       const [name, value] = parts[i].split(":");
+//       jsonObject[name] = value;
+//     }
+    
+//     console.log(jsonObject);
+    
+//   }
+  let total =0 
   return (
     <section className="text-gray-600 body-font ">
       <form onSubmit={handleSubmit1} className="max-w-full flex my-8 ml-10">
@@ -113,7 +138,7 @@ return;
                 Member 3
               </h2>
               <label>
-                Choose 1st file:
+                Choose 3rd file:
                 <input
                   className="bg-slate-200 rounded-lg pl-2 py-2 inline-flex items-center"
                   type="file"
@@ -147,7 +172,22 @@ return;
                 Upload
               </button>
             </form>
-            {result && <p>Result: {result}</p>} 
+            <br></br>
+            {result && <>Result: {
+                result.map((u)=>
+                <>
+                <p>{u[0]} { u[1]}</p>
+                
+                {total += u[1]}
+
+                </>
+                )              
+                } 
+                Total = {total}</>} 
+
+
+            
+            
           </div>
         </div>
       </div>
