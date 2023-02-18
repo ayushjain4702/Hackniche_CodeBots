@@ -37,37 +37,38 @@ function About() {
             <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
-                  Offices worldwide
+                  Time
                 </dt>
                 <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
-                  12
+                  24 hours
                 </dd>
               </div>
 
               <div className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
-                  Full-time colleagues
+                  Mode
                 </dt>
                 <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
-                  300+
+                  Offline
                 </dd>
               </div>
 
               <div className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
-                  Hours per week
+                Members per Team
                 </dt>
                 <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
-                  40
+                2 - 4 
+                
                 </dd>
               </div>
 
               <div className="flex flex-col-reverse">
                 <dt className="text-base leading-7 text-gray-300">
-                  Paid time off
+                  Entry Fee
                 </dt>
                 <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
-                  Unlimited
+                  Free
                 </dd>
               </div>
             </dl>
@@ -83,14 +84,13 @@ function About() {
             <BuildingOfficeIcon className="h-8 w-8" />
             {/* https://unstop.com/c/shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-placement-interview-competitions-articles-videos-289 */}
             <p>
-              Shri Vile Parle Kelavani Mandal's Dwarkadas J. Sanghvi College of
-              Engineering (DJSCE), Mumbai
+            Thakur College of Engineering & Technology
             </p>
           </h2>
           <h2 className="flex space-x-4 text-lg">
             <MapPinIcon className="h-8 w-8" />
             <p>
-              Dwarkadas Jivanlal Sanghvi College of Engineering, Mumbai,
+              Mumbai,
               Maharashtra, India
             </p>
           </h2>
@@ -107,7 +107,7 @@ function About() {
                   Register Team
                 </div>
               </NavLink>
-              <NavLink to="/parse">
+              <NavLink to="/details">
                 <div className="bg-indigo-900 text-white font-semibold text-xl rounded-2xl p-3 px-4 ml-10">
                   Registered Team Details
                 </div>
@@ -135,7 +135,7 @@ function About() {
                 </div>
                 <div>
                   <p>Team Size</p>
-                  <p>1,099</p>
+                  <p>2 - 4 members</p>
                 </div>
               </div>
               <div className="flex">
@@ -258,9 +258,7 @@ function About() {
                   Venue
                 </h2>
                 <p className="leading-relaxed mb-8">
-                  Dwarkadas Jivanlal Sanghvi College of Engineering, No. U, 15,
-                  Bhaktivedanta Swami Rd, opp. Cooper Hospital, Navpada, JVPD
-                  Scheme, Vile Parle, Mumbai, Maharashtra 400056
+                Thakur College of Engineering & Technology, Mumbai, Maharashtra 400056
                 </p>
               </div>
               <div className="p-12 md:w-1/3 flex flex-col items-start">

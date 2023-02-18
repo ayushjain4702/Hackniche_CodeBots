@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function VideoCall() {
   return (
@@ -21,10 +22,15 @@ function VideoCall() {
               registration process via video or chat
             </div>
 
-            <div className="flex mx-auto ">
+            <div className="flex mx-auto flex-col">
               <button className="text-white bg-blue-700 border-0 py-4 px-8 focus:outline-none hover:bg-indigo-600 rounded-lg text-2xl">
                 <a href="https://chat.1410inc.xyz/">Start Video Conference</a>
               </button>
+              <NavLink to="/about">
+            <button class="flex mx-auto mt-8 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              Go Back
+            </button>
+          </NavLink>
             </div>
           </div>
         </div>
